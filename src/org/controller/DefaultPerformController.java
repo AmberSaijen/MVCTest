@@ -25,9 +25,9 @@ public class DefaultPerformController implements PerformController {
 	}
 	
 	@Override
-	public void performButtonAction(View view) {
+	public void performButtonAction() {
 		
-		CurrencyModel curModel = (CurrencyModel) view.getModel();
+		CurrencyModel curModel = (CurrencyModel) this.model;
 		double exchangeRate = fetchExchangeRate(curModel);
 		curModel.setExchangeResult(curModel.getBynToExchange()*exchangeRate);
 

@@ -5,7 +5,7 @@ import org.view.View;
 
 public interface PerformController {
 	
-	public void performButtonAction(View view);
+	public void performButtonAction();
 	
 	public Model getModel();
 	

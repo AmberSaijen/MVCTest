@@ -55,7 +55,7 @@ public class DefaultActionListener implements ActionListener {
 			e1.printStackTrace();
 		}
 		defaultPerformController.setModel(view.getModel());
-		defaultPerformController.performButtonAction(view);
+		defaultPerformController.performButtonAction();
 		view.getDataFromModel();
 	}
 
